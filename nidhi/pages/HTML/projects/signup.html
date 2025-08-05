@@ -3,16 +3,21 @@
 <head>
     <title>signupForm</title>
 </head>
-<body>
+<body style="background-color: blanchedalmond;text-align: center;">
     <form>
     <form id="signupForm">
         <h2>Sign Up</h2>
         <label for="newUsername">Username:</label>
-        <input type="text" name="newUsername" value="newUsername"><br><br>
+        <input type="text" placeholder="Username"><br><br>
         <label for="newEmail">Email:</label>
-        <input type="email" name="newEmail" value="newEmail"><br><br>
+        <input type="email" placeholder="email"><br><br>
         <label for="newPassword">Password:</label>
-        <input type="password" name="newPassword" value="newPassword"><br><br>
+        <input type="password" placeholder="*** *** ***"><br><br>
+        <label for="confirm password">Confirm password</label>
+        <input type="text" placeholder="*** *** ***"><br><br>
+        <label for="gender">Select your Gender:</label><br>
+        <input type="radio" name="gender" value="male">male<br>
+        <input type="radio" name="gender" value="female">Female<br><br>
         <button type="submit">Register</button>
     </form>
 </body>
