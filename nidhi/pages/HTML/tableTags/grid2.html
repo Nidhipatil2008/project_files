@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+                  
+        }
+        .container{
+            width: 900px;
+            height: 600px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            background-color: aquamarine;
+            border: solid black;
+            display: grid;
+        }
+        .box{
+            background-color: blanchedalmond;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: solid black;
+        }
+        .big-box{
+            grid-column: span 3;
+        }
+        .big-row{
+            grid-row: span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+     <div class="box big-box"></div>
+     <div class="box big-row"></div>
+     <div class="box"></div>
+     <div class="box"></div>
+     <div class="box"></div>
+     <div class="box"></div>
+    </div>
+</body>
+</html>
