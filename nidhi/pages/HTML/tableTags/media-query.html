@@ -13,9 +13,9 @@
             padding: 40px;
             font-size: 50px;
             background-color: burlywood;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            display: grid;
+           
+          
             
         }
         h1{
@@ -27,32 +27,43 @@
             grid-template-columns: 1fr 1fr 1fr;
             gap: 10px;
             margin: 20px;
-            background-color: indianred                                                 ;
+            background-color: rgb(194, 205, 92);
         }
         .box{
             border: 2px solid black;
             height: auto;
         }
            /* Desktop (Width 500px and above) */
-           @media(max-width : 500px) {
+           @media(max-width : 700px) {
            body {
             background-color: cadetblue;
             grid-template-columns: 1fr 1fr;
            } 
 
         }
-        @media(max-width : 748px)  {
+        /*ipad (748 and above)*/
+          @media(max-width : 748px)  {
             .box{
             height: auto;
             width: 160px;
+            background-color: aqua;
             
           }          
           .container{
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: 1fr 1fr 1fr;
-            
-           }
-        }          
+            background-color: rgb(165, 155, 157);
+           }     
+        }    
+        /*iphone */     
+        @media(max-width : 850px) {
+            .box{
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+              background-color: orange;
+              
+            }
+        }
        </style>
         <h1>It,s really Magic</h1>
         <div class="container">
