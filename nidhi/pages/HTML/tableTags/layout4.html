@@ -18,6 +18,16 @@
             display: flex;
             justify-content: space-around;            
         }
+        nav{
+            color: white;
+            font-weight: bold;
+            
+
+            
+;
+    gap: 20px;
+    
+        }
         button{
             width: 30%;
         }
@@ -44,6 +54,33 @@
             padding-top: 20px ;
             font-size : 50px;
         }
+        p{
+            font-weight: bolder;
+            padding-left: 60%;
+            padding-top: 90px;
+            font-size: 30px;
+        }
+        .skills{
+            margin-bottom: 20px;
+            padding-left: 37%;
+        }
+        .skill-bar{
+            width: 90%;
+            height: 10px;
+            background: #444;
+            border-radius: 5px;
+            margin-top: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            
+        }
+        .fill{
+            
+            height: 100%;
+            background: #ff5733;
+            transition: width 0.5s ease-in-out;
+}
+        
         
     </style>
 </head>
@@ -55,30 +92,63 @@
         </div>
         <nav>
             <ul>
-                <button><li>Home</li></button>
-                <li>About</li>
-                <li>Project</li>
-                <li>Contact</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
             </ul>
         </nav>
     </header>
+    
     <table>
          <tr style="background-color:rgb(13, 21, 61);">
             <td style="color: azure;size: 50cm;"><h1 style="color: cornflowerblue;font-size:400%;"><b style="font-size: 100%;">Hi, I'm Ammena Dev</b><h2>A passionate web developer & QA Engineer specialising</h2><h2>in HTML,CSS,Javascript.</h2>
             <a href="../projects/view my work.html"><button style="background-color: chartreuse;"><h3>View my work</h3></td></button></a>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            
          </tr>
          
     </table>
+
+    <!--about section-->
     <main>
-         <section class="about">
+         <section class="about" id="about">
          <div class="about-title"><h1><b>About Me</b></h1></div>
          <div class="profile"></div>
-         <p>My name is Ameena Dev, and i am passionate frontweb web developer.I have always been fascinated by the intersection of design</p>
+         <p>My name is Ameena Dev, and i am passionate frontweb web developer.<br>I have always been fascinated by the intersection of design.</p>
+         <p>I specialised in :</p>
+          <!--skills bar-->
+          <div class="skills">
+          <div class="skills">
+            <span>HTML & CSS</span>
+           <div class="skill-bar">
+           <div class="fill" style="width: 90%;"></div>
+          </div>
+          </div>
+
+          <div class="skills">
+            <span>JavaScript</span>
+            <div class="skill-bar">
+            <div class="fill" style="width: 10%;"></div>
+              </div>
+              </div>
+          
+          <div class="skills">
+            <span>React-JS</span>
+            <div class="skill-bar">
+            <div class="fill" style="width: 10%;"></div>
+              </div>
+              </div>
+        
+          <div class="skills">
+            <span>React-JS</span>
+            <div class="skill-bar">
+            <div class="fill" style="width: 10%;"></div>
+              </div>
+              </div>
+          </div>
+
+         </div>
         </section>
     </main>
 </body>
