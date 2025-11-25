@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+        .container{
+            height: 450px;
+            width: 400px;
+            background-color: rgb(199, 233, 222);
+            margin-left: 20%;
+            padding-top: 20px;
+            border: 2px solid slategray;
+            padding-left: 10%;
+        }
+        h1{
+            font-size: 40px;
+        }
+        input{
+            margin-left: 10%;
+        }
+        button{
+            background-color: rgb(19, 104, 174);
+            color: white;
+            width: 250px;
+            height: 30px;
+            margin-left: 10%;
+            
+           
+        }
+        script{
+            text-align: center;
+        }
+        
+        
+    </style>
+   
+</head>
+<body>
+    
+     <div class="container">
+        <h1 id="number-1"></h1>
+        <h1 id="number-2"></h1>
+         <h1>Multiplication Quiz</h1><br>
+         <h4 id="number-3"></h4>
+         <input id="check" width=""><br><br><br>
+        <button onclick="game()">Check Answer</button>
+         <h1 id="result" style="color: green;"></h1>
+         <button onclick="output()">New Question</button>
+
+       
+        
+                                                                               
+        
+
+    </div>
+    <script>
+        let num1= Math.random() * 10; 
+        let num2 = Math.random() * 10;
+
+        num1 = Math.floor(num1);
+        num2 = Math.floor(num2);
+         
+        let multi = num1 * num2
+        
+        document.getElementById("number-3").innerHTML = "What is " + num1 + " * " + num2 + " ? ";
+       
+             
+        
+          function game(){
+        let userAns = document.getElementById("check").value
+        let result = userAns == multi
+        document.getElementById("result").innerHTML = result;
+          }
+          function output(){
+               location.output()
+          }
+
+        // function checking(){
+
+        // let A = Number(document.getElementById ("userAns").value);
+
+        // let num1 = Math.random() * 10;
+        // let num2 = math.random() * 10;
+        
+        // num1 = Math.floor(num1);
+        // num2 = Math.floor(num2);
+
+        // let userAns = (num1 + " x " + num2 +" = ?")
+
+        // document.getElementById("display").innerHTML= "True" + (num1 * num2); 
+        
+        // }
+       
+    </script>
+</body>
+</html>

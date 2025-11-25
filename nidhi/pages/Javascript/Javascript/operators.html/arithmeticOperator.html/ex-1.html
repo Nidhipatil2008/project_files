@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Arithmetic operator</title>
+    <style>
+        b{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <input type="number" id="num1">
+     <input type="number" id="num2">
+     <button onclick="calculate()">calculate</button>
+     <p>sum of two number is <b id = "sum"></b></p>
+     <p>Difference of two number is <b id = "diff"></b></p>
+    
+    <script>
+        //input
+        function calculate(){
+        let num1 = document.getElementById("num1").value;
+        let num2 = document.getElementById("num2").value;
+        //process
+        let sum = Number(num1) + Number(num2);
+        let diff = Number(num1) - Number(num2);
+        //output
+        document.getElementById("sum").innerHTML = sum;
+        document.getElementById("diff").innerHTML = diff;
+        }
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+  
+     
+    <h1 id="number-1"></h1>
+     <h1 id="number-2"></h1>
+      <h1>Multiplication Quiz</h1>
+      <h3 id="number-3"></h3>
+      <input id="check"><br><br>
+     <button onclick="game()">Check Answer</button>
+      <h1 id="result"></h1>
+      <button onclick="output()"></button>
+    
+    <script>
+        let num1= Math.random() * 10; 
+        let num2 = Math.random() * 10;
+
+        num1 = Math.floor(num1);
+        num2 = Math.floor(num2);
+         
+        let multi = num1 * num2
+        document.getElementById("number-1").innerHTML = num1;
+        document.getElementById("number-2").innerHTML = num2;
+        document.getElementById("number-3").innerHTML = "What is " + num1 + " * " + num2 + " ? ";
+       
+             
+        
+          function game(){
+        let userAns = document.getElementById("check").value
+        let result = userAns == multi
+        document.getElementById("result").innerHTML = result;
+          }
+
+        function output(){
+            
+        console.log(num1)
+        console.log(num2)
+
+          }
+
+
+    </script>
+</body>
+</html>
