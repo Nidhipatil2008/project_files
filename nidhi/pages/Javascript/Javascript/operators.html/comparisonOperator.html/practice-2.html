@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        width: 100vw;
+        height: 100vh;
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .container{
+        width: 30%;
+        height: 50%;
+        border-color: black;
+        border-style: solid;
+        border-width: 2px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        background-color: darkgrey;
+    }
+    .heading{
+        width: 100%;
+        height: 20%;
+        background-color: rgb(242, 194, 136);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 35px;
+        
+    }
+    .input-grp{
+         width: 80%;
+         height: 30%;
+         display: flex;
+         flex-direction: column;
+         gap: 20px;
+    }
+    input{
+        height: 30px;
+        font-size: 30px;
+        padding-left: 20px;
+    }
+    label{
+        font-size: 30px;
+    }
+    button{
+        width: 80%;
+        height: 10%;
+        background-color: cornsilk;
+        font-size: 20px;
+        font-weight: 600px;
+        color: rgb(26, 202, 152);
+        border: none;
+        border-radius: 15px;
+    }
+    .display{
+        width: 80%;
+        height: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+</head>
+<body>
+     <div class="container">
+    <div class="heading">Ticket Type Checker</div><br><br>
+    <div class="input-grp">
+        <label>Enter your age:</label>
+        <input type="number" id="input-age">
+    </div><br><br>
+    <button onclick="ticket()">Check Ticket Type</button>
+    <div class="display">
+    <span id="result"></span>
+    </div>
+   </div>
+    <script>
+        function ticket(){
+        let age = document.getElementById("input-age").value;
+        if(age <= 12){
+            document.getElementById("result").innerHTML = "Child Ticket."
+            
+        }
+        else{
+             document.getElementById("result").innerHTML = "Adult Ticket."
+        }
+          document.getElementById("input-age").value= "";
+    }
+    </script>
+</body>
+</html>
