@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logical operators</title>
+</head>
+<body>
+    <h1>Enter email or username</h1><br>
+    <input type="text" id="userName" placeholder="enter registered email">
+    <h1>Enter password</h1><br>
+    <input type="text" id="pass" placeholder="enter password">
+    <button onclick="loginDetails()">Login</button>
+    <script>
+
+        let username = "userName02";
+        let email = "example@gmail.com";
+        let password ="1234";
+
+function loginDetails(){
+         let nameInput = document.getElementById("userName").value;
+         let passInput = Number(document.getElementById("pass").value);
+
+
+        if((nameInput == username|| nameInput == email) && passInput == password){
+            alert("Login successul")
+
+        }
+        else{
+            alert("Login Fail")
+        }
+    }
+    </script>
+</body>
+</html>
