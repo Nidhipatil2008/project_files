@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Cart Discount Checker</h1>
+    <label>Cart total($):</label><br>
+    <input type="number" id="cart-value"><br><br>
+    <input type="checkbox" id="checkbox">
+     <label>Is a member</label><br><br>
+    <button onclick="check()">Check discount</button>
+    <span id="result"></span>
+    
+
+    <script>
+        function check(){
+            let value = document.getElementById("checkbox").checked;
+            let cartValue = document.getElementById("cart-value").value; 
+
+             if(cartValue >= 100 && value){
+                alert("discount applied")
+             }else{
+                document.getElementById("result").innerHTML = " discount is not applied"
+
+             }
+        }
+
+        
+        //hint = (totalCart >= 100 & value)
+    </script>
+</body>
+</html>
