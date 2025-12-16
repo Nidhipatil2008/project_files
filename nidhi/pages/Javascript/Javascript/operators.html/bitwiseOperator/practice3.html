@@ -6,10 +6,20 @@
     <title>Document</title>
 </head>
 <body>
+    <label>Number sign converter</label>
+    <h1>Enter a positive number: </h1>
+    <input class="number" id="check">
+    <button>Convert to negative</button>
+    <span id="result"></span>
     <script>
-        let num = 5
-        let result = ~num + 1  
-        alert(result)
+        let num = document.getElementById("check").value;
+        result = ~num + 1
+        document.getElementById("result").innerHTML = ""
+
+
+        //let num = 5
+        //let result = ~num + 1  
+        //alert(result)
     </script>
 </body>
 </html>

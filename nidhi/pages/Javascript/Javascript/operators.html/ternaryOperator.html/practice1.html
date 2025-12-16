@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 350px;
+            width: 50%;
+            border: 2px solid black;
+            
+        }
+        button{
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+       <div class="container">
+        <h1>Even or odd checker</h1>
+        <input class="number" id="check">
+        <button>check</button><br>
+       </div>
+
+       <script>
+           let num = prompt()
+           let result = (num % 2 == 0)?"is Even":"is odd" 
+
+           alert(result)
+       </script>
+</body>
+</html>
