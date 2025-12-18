@@ -7,11 +7,14 @@
 </head>
 <body>
     <script>
-        let age = prompt()
-        let result = (age >= 18)?"Eligible":"Not eligible"
+        let year = prompt("Enter a year: ")
+        if(year % 4 == 0 && year % 100 != 0){
+            alert("leap year");
+        }else{
+            alert("Not a leap year");
+        }
 
-        alert(result)
     </script>
+    
 </body>
-
 </html>

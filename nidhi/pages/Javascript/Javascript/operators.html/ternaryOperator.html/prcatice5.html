@@ -7,11 +7,9 @@
 </head>
 <body>
     <script>
-        let age = prompt()
-        let result = (age >= 18)?"Eligible":"Not eligible"
-
-        alert(result)
+        let marks = prompt("Enter a marks")
+        let grade = (marks >= 90)?"A":( marks >= 75)?"B":(marks >= 50)?"C":(marks >= 35)?"D":"Fail"
+        alert(grade)
     </script>
 </body>
-
 </html>

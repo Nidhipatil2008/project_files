@@ -9,6 +9,12 @@
             height: 350px;
             width: 50%;
             border: 2px solid black;
+            text-align: center;
+            justify-content: center;
+            background-color: rgb(172, 205, 206);
+            padding-top: 30px;
+            margin-left: 25%;
+            margin-top: 40px;
             
         }
         button{
@@ -19,15 +25,18 @@
 <body>
        <div class="container">
         <h1>Even or odd checker</h1>
-        <input class="number" id="check">
+        <h4>Enter a number: </h4>
+        <input class="number" id="check"><br><br>
         <button>check</button><br>
        </div>
 
        <script>
-           let num = prompt()
-           let result = (num % 2 == 0)?"is Even":"is odd" 
+          // let num = prompt("Enter a number:")
+          // let result = (num % 2 == 0)?"is Even":"is odd" 
 
-           alert(result)
+          // alert(result)
+          let num = document.getElementById("check").value
+          let result = document.getElementById
        </script>
 </body>
 </html>
