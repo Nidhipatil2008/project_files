@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="smallPizza()" >Small pizza</button><br><br>
+    <button onclick="mediumPizza()">Medium pizza</button><br><br>
+    <button onclick="largePizza()">Large pizza</button><br><br>
+     <p id="display"></p>
+    
+    <script>
+      let pizzaPrice = 0
+      let select = ""
+      function getPizza(){
+         switch(pizzaPrice){
+          case 150: 
+          select = "You select small pizza of rs.150"
+          break;
+          case 250: 
+          select = "You select medium pizza of rs.150"
+          break;
+          default: 
+          select = "You select large pizza of rs.150"
+          break;
+         }
+         document.getElementById("display").innerHTML = select;
+       
+      }
+      function smallPizza(){
+        pizzaPrice = 150
+        getPizza()
+      }
+       function mediumPizza(){
+        pizzaPrice = 250
+        getPizza()
+      }
+       function largePizza(){
+        pizzaPrice = 350
+        getPizza()
+      }
+    </script>
+</body>
+</html>
