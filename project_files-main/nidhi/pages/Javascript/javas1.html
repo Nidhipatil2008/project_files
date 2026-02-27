@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 50%;
+            height: 350px;
+            box-shadow: 5px 5px 50px 3px rgb(153, 147, 147);
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-left: 35%;
+            margin-top: 200px;
+            background-color: rgb(227, 204, 175);
+        }
+        button{
+        width: 150px;
+        height: 40px;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2%;
+        }
+        .display-box{
+        width: 50%;
+        height: 100px;
+        margin: 10px;
+        border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <h1>Javascript</h1>
+    <input type="text" id="input1" placeholder="Enter a number"><br>
+    <input type="text" id="input2" placeholder="Enter a number"><br>
+    <div class="display-box" id="display"></div>
+    <button onclick="myName()">click me</button>
+    </input>
+   </div>
+
+    <script>
+        function myName(){
+            let x = Number(document.getElementById("input1").value);
+            let y = Number(document.getElementById("input2").value);
+          
+            let z = x * y;
+            document.getElementById("display").innerHTML = z;
+
+        console.log(z);
+       }
+
+        // let StudentMarks = 35;
+        // let admission = StudentMarks >= 35;
+        //    alert(admission)
+       
+    </script>
+</body>
+</html> 
