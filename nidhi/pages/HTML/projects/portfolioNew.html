@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+/* NAVBAR */
+nav{
+    display:flex;
+    justify-content:space-between;
+    padding:20px 50px;
+    background:#020617;
+    position:sticky;
+    top:0;
+}
+
+nav h2{
+    color:#38bdf8;
+}
+
+nav a{
+    color:white;
+    margin-left:20px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* HERO SECTION */
+.hero{
+    height:90vh;
+    display:flex;
+    justify-content:flex-start;  
+    align-items:center;           
+    padding-left:80px;            
+    text-align:left;              
+    background:linear-gradient(135deg,#1e293b,#0f172a);
+}
+
+.hero h1{
+    font-size:60px;
+}
+
+.hero span{
+    color:#38bdf8;
+}
+
+.hero button{
+    margin-top:20px;
+    padding:10px 20px;
+    border:none;
+    background:#38bdf8;
+    color:black;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.hero button:hover{
+    transform:scale(1.1);
+}
+.hero-img img{
+    width:250px;
+    border-radius:30%;
+    box-shadow:0 0 20px #38bdf8;
+    transition:0.3s;
+    margin-top:20px;
+    margin-left: 600px;
+  
+    
+}
+
+/* HOVER EFFECT */
+.hero-img img:hover{
+    transform:scale(1.1);
+}
+.about{
+    padding:60px 80px;
+}
+
+/* TITLE */
+.about h1{
+    font-size:40px;
+}
+
+.about span{
+    color:#ff4d6d;
+    font-size:14px;
+    letter-spacing:2px;
+}
+
+/* DESCRIPTION */
+.about p{
+    margin-top:20px;
+    max-width:700px;
+    line-height:1.6;
+    color:#cbd5e1;
+}
+
+/* INFO BOX */
+.info-box{
+    margin-top:40px;
+    border:1px solid #334155;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    box-shadow: #334155 0px 0px 10px;
+}
+
+/* EACH COLUMN */
+.info{
+    width:45%;
+}
+
+.info p{
+    margin:10px 0;
+}
+
+/* BUTTON */
+.btn{
+    margin-top:30px;
+    padding:12px 25px;
+    background:#ff4d6d;
+    border:none;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#e11d48;
+}
+
+/* RESPONSIVE */
+/* @media(max-width:768px){
+    .about{
+        padding:40px;
+    }
+
+    .info{
+        width:100%;
+    }
+} */
+
+/* PROJECTS */
+.projects{
+    padding:60px;
+}
+
+.project-container{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.card{
+    background:#1e293b;
+    padding:20px;
+    width:300px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+/* CONTACT */
+.contact{
+    padding:60px;
+    text-align:center;
+}
+
+input,textarea{
+    width:80%;
+    margin:10px;
+    padding:10px;
+    border:none;
+}
+
+button{
+    padding:10px 20px;
+    background:#38bdf8;
+    border:none;
+    cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#020617;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    nav{
+        flex-direction:column;
+        text-align:center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2>MyPortfolio</h2>
+    <div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- HOME -->
+<section class="hero" id="home">
+    <div>
+        <h1>Hi, I'm <span>Nidhi Patil</span></h1>
+        <p>A Passionate Full Stack Web Developer | Student</p>
+        <button id="about">About Me</button>
+    </div>
+    <div class="hero-img">
+        <img src="../../../assets/images/map.jpeg" alt="My Photo">
+    </div>
+</section>
+
+<!-- ABOUT -->
+
+<section class="about" id="about">  
+    <h1>About Me</h1>
+
+    <p>
+        My name is Nidhi Patil. I’m a Full Stack Web Developer based and 
+        I am very passionate and dedicated to my work. I am learning modern 
+        web development and building responsive websites.
+    </p>
+
+    <div class="info-box">
+
+        <div class="info">
+            <p><strong>Name:</strong> Nidhi Patil</p>
+            <p><strong>Phone:</strong> +91 7387545780</p>
+            <p><strong>Experience:</strong> Learner</p>
+            <p><strong>GitHub:</strong></p>
+        </div>
+
+        <div class="info">
+            <p><strong>Age:</strong> 18</p>
+            <p><strong>Post:</strong> Web Developer</p>
+            <p><strong>Achievememts:</strong>-</p>
+            <p><strong>Email:</strong> nidhi8patil@gmail.com</p>
+        </div>
+
+    </div>
+
+    <button class="btn">Download CV</button>
+
+</section>
+
+
+<!-- PROJECTS -->
+<section class="projects" id="projects">
+    <h2 style="text-align:center;">My Projects</h2>
+
+    <div class="project-container">
+        <div class="card">
+            <h3>Project 1</h3>
+            <p>Responsive Website</p>
+        </div>
+
+        <div class="card">
+            <h3>Project 2</h3>
+            <p>Android UI Design</p>
+        </div>
+
+        <div class="card">
+            <h3>Project 3</h3>
+            <p>Library System</p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <input type="text" placeholder="Your Name"><br>
+    <input type="email" placeholder="Your Email"><br>
+    <textarea placeholder="Message"></textarea><br>
+    <button>Send</button>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 My Portfolio</p>
+</footer>
+
+</body>
+</html>
