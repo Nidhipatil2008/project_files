@@ -1,0 +1,19 @@
+.cover-container{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://www.theparkhotels.com/images/site-specific/new-delhi/dining/aqua/new/aqua-new-2.jpg);
+}
+.cover-inner-box{
+    width: 50%;
+    height: 500%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(173, 42, 42, 0.287);
+    color: aliceblue;
+    border-radius: 25px;
+}
