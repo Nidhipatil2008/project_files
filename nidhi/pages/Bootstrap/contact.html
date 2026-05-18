@@ -1,51 +1,109 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Contact</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>contact us</title>
+   <!--Fav icon-->
+    <link rel="shortcut icon" href="https://cdn3d.iconscout.com/3d/premium/thumb/coding-3d-icon-png-download-12869262.png" type="image/x-icon">
 <!--css link-->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-<!--js link-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-crossorigin="anonymous"></script>
-</head>
-</head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!--js link-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
+
+</head>
 <body>
-<!--nav start-->
-<nav class="navbar navbar-dark bg-dark p-3">
-<a href="home.html" class="navbar-brand ms-3">The Learning Curve</a>
-</nav>
-<!--nav end-->
-<!--contact form start-->
-<div class="container my-5 w-50">
-<h2 class="text-center">Contact Us</h2>
+    <!-- Navbar start-->
+    <div class=" bg-dark px-2">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-2 border-bottom text-white sticky-top">
+            <a href="/"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-back"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z" />
+                </svg>
+                <span class="fs-4 text-white">CodeMaster</span> </a>
 
-<form class="mt-4">
 
-<div class="mb-3">
-<label>Name</label>
-<input type="text" class="form-control">
-</div>
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="courses.html" class="nav-link">Courses</a></li>
+                <li class="nav-item"><a href="admission.html" class="nav-link">Admission</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
 
-<div class="mb-3">
-<label>Email</label>
-<input type="email" class="form-control">
-</div>
+            </ul>
+        </header>
+    </div>
+    <!--Navbar end-->
+<section class="bg-secondary text-white text-center py-3">
+    <h2 class="fw-bold">Contact Details</h2>
+</section>
+        
+<!-- Contact Section -->
+<section class="p-5" style="background-color: rgb(236, 230, 224);">
+  <div class="container">
+    <div class="row g-4">
 
-<div class="mb-3">
-<label>Message</label>
-<textarea class="form-control"></textarea>
-</div>
+      <!-- Contact detail-->
+      <div class="col-md-6">
+        <h3>Contact us</h3>
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Full Name</label>
+            <input type="text" class="form-control" placeholder="Enter your name" required>
+          </div>
 
-<button class="btn btn-primary w-100">Send Message</button>
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" placeholder="Enter your email" required>
+          </div>
 
-</form>
+          <div class="mb-3">
+            <label class="form-label">Phone</label>
+            <input type="tel" class="form-control" placeholder="Enter your phone number">
+          </div>
 
-</div>
+          <div class="mb-3">
+            <label class="form-label">Message</label>
+            <textarea class="form-control" rows="4" placeholder="Write your message"></textarea>
+          </div>
+
+          <button class="btn btn-primary w-100">Submit</button>
+        </form>
+      </div>
+
+      <!-- Contact start -->
+      <div class="col-md-6">
+        <h3>Contact Info</h3>
+        <p><strong>Address:</strong> Nagpur, Maharashtra</p>
+        <p><strong>Phone:</strong> +91 98765 43210</p>
+        <p><strong>Email:</strong> info@codemaster.com</p>
+
+        <!-- Map -->
+        <div class="mt-4">
+          <iframe 
+            src="https://maps.google.com/maps?q=Nagpur&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            width="100%" height="250" style="border:0;">
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 <!--contact form end-->
+
+  <!-- Footer -->
+ <footer class="bg-dark text-white text-center p-3">
+    © 2026 CodeMaster Institute
+  </footer>
+
+
 </body>
+
 </html>

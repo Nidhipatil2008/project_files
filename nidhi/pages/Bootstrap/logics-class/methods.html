@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--css link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <span id="display" class=" display fw-bold"></span>
+    </div>
+    <button class="btn bg-primary text-white" onclick="studentAdd()">Push</button>
+    <button class="btn bg-secondary text-white" onclick="studentRemove()">Pop</button>
+    <button class="btn bg-primary text-white" onclick="frontAdd()">shift</button>
+    <button class="btn bg-secondary text-white" onclick="frontRemove()">unshift</button>
+    <script>
+       
+         /*- push pop-*/
+        let students = ["Kitty", "Don", "son"]
+        let display = students;
+        document.getElementById("display").innerHTML = display;
+
+
+        function studentAdd(){
+            let student = prompt();
+            students.push(student)
+            document.getElementById("display").innerHTML = display;
+
+        }
+         function studentRemove(){
+            students.pop();
+           document.getElementById("display").innerHTML = display;
+        }
+        function frontAdd(){
+            let student = prompt();
+            students.unshift(student);
+            document.getElementById("display").innerHTML = display;
+        }
+        function frontRemove(){
+            students.shift()
+            document.getElementById("display").innerHTML = display;
+        }
+
+
+        // for(let i = 1; i<=5; i++){
+        //     studentAdd();
+        // } 
+
+        
+        // alert(students);
+
+        // students.pop();
+        // alert(students);
+ 
+        /*- Length-*/
+    //   const tables = ["1", "2", "3", "4"]
+    //   let size = tables.length
+    //   alert(size);
+
+    //   /*- Length-*/
+    //   const fruits = ["orange", "yellow", "pink", "skin"]
+    //   let list = fruits.toString();
+    //   alert(list);
+
+
+    </script>
+</body>
+</html>

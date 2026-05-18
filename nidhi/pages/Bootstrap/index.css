@@ -1,0 +1,36 @@
+  body {
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .navbar {
+            transition: 0.3s;
+        }
+
+        .carousel-item img {
+            height: 90vh;
+            object-fit: cover;
+            filter: brightness(55%);
+        }
+        .carousel-caption {
+            bottom: 25%;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #0d6efd, #6f42c1);
+            color: white;
+        }
+
+        .card {
+            border: none;
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        
+        section {
+            padding: 70px 0;
+        }
+        .col-md-4{
+            height: 300px;
+        }

@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(rgb(5, 0, 70),
+            rgb(8, 2, 60),
+            rgb(35, 35, 60));
+        }
+
+        .container {
+            width: 70%;
+
+        }
+
+        .question-box {
+            width: 100%;
+            height: 90px;
+            background-color: rgb(15, 15, 120);
+            border: 2px solid yellowgreen;
+            border-radius: 25px;
+            margin-bottom: 90px;
+        }
+
+        .options {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .option-box {
+            height: 100px;
+            background-color: rgb(15, 15, 120);
+            border: 2px solid yellowgreen;
+            border-radius: 25px;
+            color: white;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .option-box:hover {
+            transform: scale(1.03);
+            background-color: rgb(25, 25, 160);
+        }
+
+        .buttons {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .btn {
+            width: 160px;
+            height: 55px;
+            border: 2px solid yellowgreen;
+            border-radius: 15px;
+            background-color: rgb(18, 18, 30);
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: rgb(25, 25, 160);
+            
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="question-box">What does Oop stand for</div>
+
+        
+        <div class="options">
+
+            <div class="option-box">Objected Oriented programming</div>
+            <div class="option-box">Object Oriented problem</div>
+            <div class="option-box">Object oriented Problem solving</div>
+            <div class="option-box">Object Oriented Problem solving</div>
+
+        </div>
+        <div class="buttons">
+            <button class="btn">Lock</button>
+            <button class="btn">next</button>
+        </div>
+    </div>
+<script>
+
+let options = document.querySelectorAll(".option-box");
+let lockBtn = document.querySelector(".btn");
+
+let selected = null;
+
+// select option
+options.forEach((option) => {
+
+    option.onclick = function () {
+
+        options.forEach((opt) => {
+            opt.style.background = "rgb(15, 15, 120)";
+        });
+
+        this.style.background = "orange";
+
+        selected = this;
+    };
+
+});
+
+// lock button
+lockBtn.onclick = function () {
+
+    let correct = options[0];
+
+    if (selected == correct) {
+
+        correct.style.background = "green";
+        alert("Correct Answer");
+
+    } 
+    
+    else {
+
+        if (selected) {
+            selected.style.background = "red";
+        }
+
+        correct.style.background = "green";
+
+        alert("Wrong Answer");
+    }
+
+};
+
+</script>
+
+</body>
+
+</html>

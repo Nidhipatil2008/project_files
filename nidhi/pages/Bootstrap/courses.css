@@ -1,0 +1,29 @@
+  body {
+      background: #f8f9fa;
+    }
+
+
+    .hero {
+      background: linear-gradient(135deg, #0d6efd, #6f42c1);
+      color: white;
+      padding: 60px 0;
+    }
+
+
+    .card {
+      border: none;
+      transition: 0.3s;
+      border-radius: 15px;
+    }
+
+     .card:hover {
+            transform: translateY(-10px);
+        }
+     
+    .card img {
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+    img{
+      box-sizing: border-box;
+    }
